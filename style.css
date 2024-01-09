@@ -87,6 +87,16 @@ body {
     }
 }
 
+.grid-flow {
+    display: grid;
+    align-content: start;
+    gap: 1rem;
+}
+
+.grid-flow[data-spacing="large"] {
+    gap: 2rem;
+}
+
 .section-title {
     font-weight: var(--fw-bold);
     font-size: var(--fs-600);
@@ -143,4 +153,12 @@ body {
     .results {
         border-radius: var(--border-radius);
     }
+}
+
+.result-score {
+    width: 12rem;
+    margin-inline: auto;
+    background: var(--gradient-to-transparent);
+    aspect-ratio: 1/1;
+    border-radius: 50%;
 }
